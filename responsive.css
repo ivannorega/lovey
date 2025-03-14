@@ -1,0 +1,127 @@
+@media only screen and (min-width:768px){
+    
+    .welcome, .caption, .caption_head, .cap, ul, .contact_parag{
+        font-size: 20px;
+    }
+    .full_name{
+        font-size: 40px;
+    }
+    .socmed1, .ed2, .educ{
+        font-size: 25px;
+    }
+    .ihave{
+        font-size: 23px;
+    }
+    .box1{
+        width: 120px;
+        padding: 30px;
+    }
+    .b, .contact{
+        font-size: 28px;
+    }
+    .title2, .list_tit, .head, .list_tit {
+        font-size: 30px;
+    }
+    .iprovide{
+        gap: 30px;
+        padding: 100px 25px;
+    }
+    .box2{
+        width: 270px;
+    }
+    .menu_language{
+        gap: 80px;
+    }
+    .pdisplay{
+        width:430px;/* 450 */
+    }
+    .ed1, .contact_title{
+        font-size: 35px;
+    }
+    .educ_list{
+        width: 420px; 
+        padding: 30px;
+    }
+    .conn_contact{
+        display: none;
+
+    }
+    .soc{
+        display: none;
+    }
+    .me{
+        max-width: 550px;
+    }
+}
+@media only screen and (min-width:860px){
+    .menu-btn{
+        display:  none;
+    }
+    
+    .nav{
+        display: block;
+            position: relative;
+            left: -40px;
+            margin-left: auto;
+            display: flex;
+            gap: 30px;
+            font-size: 20px;
+            font-weight: 600;
+        
+    }
+    .short-caption, .full-caption, .see-more-btn, .view {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:1000px){
+    .nav{
+        left:  -90px;
+    }
+    .section{
+        padding: 0;
+    }
+    .caption{
+        font-size: 20px;
+        width: 480px;
+    }
+    .socmed1{
+        font-size: 25px;
+    }
+    .conn_contact{
+        display: block;
+    }
+    .input1{
+
+        display: flex;
+        
+    }
+    .soc{
+        display: block;
+    }
+    .short-caption, .full-caption, .see-more-btn, .view {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:1349px){
+    .port{
+        left: 150px;
+    }
+    .nav{
+        left:  -150px;
+    }
+    .socmed1{
+        left: 175px;
+    }
+    .ihave{
+        gap: 80px;
+    }
+    .iprovide{
+        gap: 80px;
+    }
+    .menu_language{
+        gap: 90px;
+    }
+    .short-caption, .full-caption, .see-more-btn, .view {
+        font-size:20px;
+    }
+}
