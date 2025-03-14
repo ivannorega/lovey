@@ -122,3 +122,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    let audio = document.getElementById("audioPlayer");
+
+    // Try to autoplay
+    let playPromise = audio.play();
+    
+    if (playPromise !== undefined) {
+        playPromise.catch(error => {
+            console.log("Autoplay blocked! Waiting for user interaction...");
+            // Add click event to play after user interaction
+            document.body.addEventListener("click", function() {
+                audio.play();
+            }, { once: true });
+        });
+    }
+});
