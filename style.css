@@ -498,7 +498,7 @@ i{
     margin-bottom: 10px;
 }
 @font-face {
-    font-family: 'ImpactCustom';
-    src: url('https://ivannorega.github.io/lovey/Impact.ttf') format('truetype');
-
+    font-family: 'Impact';
+    src: url('Impact.ttf') format('truetype');
 }
+
