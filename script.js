@@ -100,7 +100,7 @@ document.addEventListener("click", function() {
 document.addEventListener("DOMContentLoaded", function() {
     let audio = document.getElementById("audioPlayer");
 
-    // Retrieve saved playback time
+    // Get saved playback time
     let savedTime = localStorage.getItem("audioTime");
     if (savedTime) {
         audio.currentTime = Math.max(0, parseFloat(savedTime) - 6); // Skip 6 seconds
@@ -108,10 +108,15 @@ document.addEventListener("DOMContentLoaded", function() {
         audio.currentTime = 6; // Start 6 seconds ahead if no saved time
     }
 
-    // Try to autoplay (may require user interaction, handled in the click event)
-    audio.play().catch(error => console.log("Autoplay blocked: " + error));
+    // User must click before playing (browser autoplay restrictions)
+    document.addEventListener("click", function() {
+        if (audio.paused) {
+            audio.muted = false;  // Unmute
+            audio.play().catch(error => console.log("Play error: " + error));
+        }
+    });
 
-    // Save the playback position every second
+    // Save playback time
     audio.addEventListener("timeupdate", function() {
         localStorage.setItem("audioTime", audio.currentTime);
     });
